@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Jockey+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(46, 45, 45);
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+   list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(105, 104, 105);
+}
+a:hover{
+    color: rgb(50, 195, 152);
+    transition: all ease 0.2s;
+}
+
+header {
+    background: rgb(27, 27, 27);
+    height: 100vh;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0 18px 0;
+}
+
+
+header h1 {
+    font-family: 'Jockey One', sans-serif;
+    color: rgb(50, 195, 152);
+    border-bottom: dotted 2px rgb(50, 195, 152);
+    font-size: 35px;
+}
+
+nav ul li {
+    padding: 16px;
+    font-size: 22px;
+}
+
+.socials ul li{
+    padding: 6px;
+}
