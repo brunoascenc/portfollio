@@ -45,11 +45,35 @@ header h1 {
     font-size: 35px;
 }
 
+/* nav ul {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+} */
+
 nav ul li {
     padding: 16px;
     font-size: 22px;
 }
 
+nav ul li b {
+    display: none;
+    color: rgb(50, 195, 152);
+    font-size: 13px;
+    height: 100%;
+}
+
+nav a:hover i {
+    display: none;
+    transition: all 0.9s ease;
+}
+nav a:hover b {
+    display: flex;
+    padding: 0;
+    transition: all ease 0.2s;
+}
 .socials ul li{
     padding: 6px;
 }
