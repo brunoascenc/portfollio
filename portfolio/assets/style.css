@@ -27,6 +27,7 @@ a:hover{
 }
 
 header {
+    position: relative;
     background: rgb(27, 27, 27);
     height: 100vh;
     width: 60px;
@@ -41,39 +42,49 @@ header {
 header h1 {
     font-family: 'Jockey One', sans-serif;
     color: rgb(50, 195, 152);
-    border-bottom: dotted 2px rgb(50, 195, 152);
+    border-bottom: solid 2px rgba(50, 195, 152, 0.739);
     font-size: 35px;
 }
 
-/* nav ul {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-} */
-
-nav ul li {
+ nav ul li {
     padding: 16px;
     font-size: 22px;
-}
+    height: 50px;
+} 
 
 nav ul li b {
     display: none;
     color: rgb(50, 195, 152);
     font-size: 13px;
     height: 100%;
+} 
+
+ nav a:hover i {
+    display: none;
 }
 
-nav a:hover i {
-    display: none;
-    transition: all 0.9s ease;
-}
 nav a:hover b {
-    display: flex;
-    padding: 0;
-    transition: all ease 0.2s;
+    display: block;
+    padding: 10%;
 }
+
 .socials ul li{
     padding: 6px;
+} 
+
+.nav li {
+    display:block;
+    height: 52px;
+    width: 145px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+} 
+
+.nav li a {
+    color:rgb(117, 109, 109);
+    font-size:20px;
+}
+
+.nav li b {
+    display: none;
 }
