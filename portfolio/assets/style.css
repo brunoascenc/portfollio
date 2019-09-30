@@ -13,6 +13,89 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+#container {
+    display: flex;
+    height: 100vh;
+    /* position: relative; */
+}
+
+/*Home*/
+.greendetail {
+    color: #32c398;
+}
+
+.circles-animation img {
+    max-width: 100%;
+}
+.circles-animation {
+    display: flex;
+}
+
+.circle {
+    transform: translate(-10%, -05%);
+    position: absolute;
+    width: 45%;
+    align-self: center;
+    opacity: 0.8;
+}
+
+.circleOne img {
+    animation: rotateCircle 2s linear infinite;
+}
+
+.circleTwo img {
+    animation: rotateCircle 8s linear infinite;
+}
+
+@keyframes rotateCircle {
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.home-page {
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    flex-direction: column;
+    margin-left: 80px;
+    margin-top: -30px;
+}
+
+.detail p {
+    color: rgb(141, 137, 137);
+    font-size: 14px;
+}
+
+.home-page h1, p {
+    color: rgb(234, 235, 236);
+}
+
+.home-page a {
+    color: rgb(242, 244, 246);
+    border: solid 2px #32c398;
+    padding: 6px;
+    text-transform: uppercase;
+    width: 150px;
+    /* font-weight: bold; */
+    margin-top: 35px;
+    border-radius: 2px;
+}
+
+.home-page a:hover{
+    background: #32c398;
+    color: aliceblue;
+}
+
+.text {
+    width: 600px;
+    margin-top: 15px;
+}
+
+/*Nav*/
 ul {
    list-style: none;
 }
@@ -42,7 +125,7 @@ header {
 header h1 {
     font-family: 'Jockey One', sans-serif;
     color: rgb(50, 195, 152);
-    border-bottom: solid 2px rgba(50, 195, 152, 0.739);
+    border-bottom: solid 1px rgba(50, 195, 152, 0.739);
     font-size: 35px;
 }
 
@@ -87,4 +170,72 @@ nav a:hover b {
 
 .nav li b {
     display: none;
+}
+
+/*Contact*/
+.contact-page {
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    flex-direction: column;
+    margin-left: 80px;
+    margin-top: -30px;
+}
+
+.input-flex{
+    margin-bottom: 10px;
+}
+
+.contact-page h1 {
+    color: #32c398;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.contact-page .detail {
+    margin-left: 5px;
+    margin-top: -10px;
+    margin-bottom: 25px;
+    width: 380px;
+    color: aliceblue;
+}
+
+.contact-page .detail p {
+    color: #c8caca;
+}
+
+input, textarea {
+    background-color: rgb(61, 60, 60);
+    border: solid 2px rgb(56, 56, 56);
+    padding: 12px;
+    border-radius: 3px;
+    outline: none;
+}
+
+textarea {
+    margin-top: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+}
+
+button {
+    cursor: pointer;
+    color: rgb(242, 244, 246);
+    border: solid 2px #32c398;
+    padding: 9px;
+    text-transform: uppercase;
+    width: 150px;
+    margin-top: 15px;
+    border-radius: 2px;
+    background: transparent;
+}
+
+button:hover{
+    background: #32c398;
+    color: aliceblue;
+    transition: 0.2s ease-in-out;
 }
