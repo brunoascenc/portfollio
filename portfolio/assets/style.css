@@ -70,16 +70,20 @@ body {
     font-size: 14px;
 }
 
-.home-page h1, p {
+h1{
     color: rgb(234, 235, 236);
+}
+
+p {
+    color: #e6e6e6;
 }
 
 .home-page a {
     color: rgb(242, 244, 246);
     border: solid 2px #32c398;
-    padding: 6px;
+    padding: 9px;
     text-transform: uppercase;
-    width: 150px;
+    width: 160px;
     /* font-weight: bold; */
     margin-top: 35px;
     border-radius: 2px;
@@ -104,9 +108,10 @@ a {
     text-decoration: none;
     color: rgb(105, 104, 105);
 }
+
 a:hover{
     color: rgb(50, 195, 152);
-    transition: all ease 0.2s;
+    transition: all ease-in 0.2s;
 }
 
 header {
@@ -121,6 +126,9 @@ header {
     padding: 18px 0 18px 0;
 }
 
+nav i {
+    padding: 14px;
+}
 
 header h1 {
     font-family: 'Jockey One', sans-serif;
@@ -129,20 +137,24 @@ header h1 {
     font-size: 35px;
 }
 
- nav ul li {
-    padding: 16px;
+nav ul li {
     font-size: 22px;
     height: 50px;
 } 
 
 nav ul li b {
     display: none;
-    color: rgb(50, 195, 152);
+    color: rgb(47, 47, 47);
     font-size: 13px;
-    height: 100%;
+    padding: 12px;
 } 
 
- nav a:hover i {
+nav ul li b:hover{
+    color: rgb(50, 195, 152);
+    transition: 0.2s ease-in-out;
+}
+
+nav a:hover i{
     display: none;
 }
 
@@ -160,7 +172,6 @@ nav a:hover b {
     height: 52px;
     width: 145px;
     text-align: center;
-    transition: all 0.2s ease-in-out;
 } 
 
 .nav li a {
@@ -238,4 +249,57 @@ button:hover{
     background: #32c398;
     color: aliceblue;
     transition: 0.2s ease-in-out;
+}
+
+/*Projects*/
+.projects-page {
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    flex-direction: column;
+    margin-left: 80px;
+    margin-top: -30px;
+}
+
+ /* h1 {
+    justify-content: center;
+} */
+
+.cards {
+    display: flex;
+    /* padding: 160px; */
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.project-card img {
+    width: 280px;
+    border: solid 1px #3b3b3b;
+}
+
+.project-card p {
+    width: 275px;
+    text-align: center;
+}
+
+.project-card h3 {
+    align-self: center;
+    margin-bottom: 7px;
+    color: #e6e9e9;
+    /* font-weight: 100; */
+    /* text-transform: uppercase; */
+}
+
+.link-project ul {
+   display: flex;
+   justify-content: center;
+}
+
+.link-project i {
+    /* align-self: center; */
+    margin: 10px;
 }
