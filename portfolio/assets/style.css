@@ -92,7 +92,8 @@ p {
 
 .home-page a:hover{
     background: #32c398;
-    color: aliceblue;
+    color: #2f2f2f;
+    font-weight: bold;
 }
 
 .text {
@@ -248,8 +249,9 @@ button {
 
 button:hover{
     background: #32c398;
-    color: aliceblue;
-    transition: 0.2s ease-in-out;
+    color: #2f2f2f;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
 }
 
 /*Projects*/
@@ -260,6 +262,7 @@ button:hover{
     flex-direction: column;
     margin-left: 80px;
     margin-top: -30px;
+    flex-shrink: 3;
 }
 .projects-page h1 {
     align-self: center;
@@ -298,13 +301,35 @@ button:hover{
     /* text-transform: uppercase; */
 }
 
+.link-project a {
+    /* border: solid 2px #32c398; */
+    padding: 6px;
+    color: rgb(242, 244, 246);
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+
 .link-project ul {
    display: flex;
    justify-content: center;
 }
 
+.link-project li {
+    padding: 20px;
+}
+
 .link-project i {
     /* align-self: center; */
     margin: 10px;
-    /* color: #32c398; */
+    color: rgb(206, 208, 209);
+    border-radius: 3px;
+    /* text-transform: uppercase; */
+    padding: 11px;
+    border: solid 2px #32c398;
+}
+
+.link-project i:hover {
+    background: #32c398;
+    color: rgb(43, 43, 44);
+    transition: 0.2s ease-in-out;
 }
