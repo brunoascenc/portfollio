@@ -30,6 +30,14 @@ body {
     color: #32c398;
 }
 
+.greendetail a {
+    color: #32c398;
+    border-bottom: dotted 1px #32c398;
+}
+.subtitle p{
+    color: #6b6d6c;
+}
+
 .circles-animation img {
     max-width: 100%;
 }
