@@ -9,8 +9,15 @@
         width: 100%;
         justify-content: center;
     }
+
+    nav a:hover b {
+        display: inline-block;
+        padding: 28px 0px 0 0;
+    }
+    
      
-     header {
+    header {
+         display: flex;
          width: 100%;
          flex-direction: inherit;
          height: 1%;
@@ -33,11 +40,12 @@
 
      nav ul li i {
         font-size: 20px;
-        padding: 28px 20px 0 0;
+        padding: 28px 0px 0 0;
     }
      
      .nav li {
-         display: inline;
+         display: inline-block;
+         width: 40px;
      } 
     
 }
@@ -47,6 +55,9 @@
         font-size: 17px;
         padding: 28px 12px 0 0;
     }
+    .nav li {
+        width: 30px;
+    } 
 }
 
 @media (max-width: 600px){
@@ -62,6 +73,16 @@
         font-size: 30px;
         padding: 12px 0px 8px 18px;
     }
+    .nav li {
+        width: 20px;
+    } 
+
+    nav ul li b {
+        display: none;
+        color: rgb(47, 47, 47);
+        font-size: 5px;
+        padding: 12px;
+    } 
 }
 
 @media (max-width: 475px){
@@ -79,6 +100,10 @@
     header h1 {
         font-size: 28px;
         padding: 15px 0px 8px 18px;
-        margin-left: -15px;
+        margin-left: -5px;
+    }
+    nav ul li i {
+        font-size: 14px;
+        padding: 33px 3px 0 0;
     }
 }
