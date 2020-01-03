@@ -108,6 +108,7 @@ p {
     background: #32c398;
     color: #2f2f2f;
     font-weight: bold;
+    border: solid 2px #32c398;
 }
 
 .text {
@@ -176,7 +177,7 @@ nav a:hover i{
 
 nav a:hover b {
     display: block;
-    padding: 10%;
+    padding: 10px;
 }
 
 .socials ul li{
@@ -184,7 +185,7 @@ nav a:hover b {
 } 
 
 .nav li {
-    display:block;
+    display: block;
     height: 52px;
     width: 145px;
     text-align: center;
