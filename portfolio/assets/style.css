@@ -212,6 +212,8 @@ nav a:hover b {
     border-radius: 2px;
     border: solid 1px rgb(35, 35, 36);
     padding: 55px 95px;
+    overflow: hidden;
+    word-break: break-word; 
 }
 
 .input-flex{
