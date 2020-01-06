@@ -131,6 +131,19 @@ a:hover{
     transition: all ease-in 0.2s;
 }
 
+.show-menu-btn, .hide-menu-btn {
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+}
+
 header {
     position: relative;
     background: rgb(27, 27, 27);
@@ -142,6 +155,7 @@ header {
     align-items: center;
     padding: 18px 0 18px 0;
 }
+
 
 nav i {
     padding: 14px;
