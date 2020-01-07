@@ -83,25 +83,19 @@
     .hide-menu-btn {
        display: block;
     }
-    
-    nav ul li b {
-       display: flex !important;
-       flex-direction: column !important;
-       height: 100%;
-       color: rgb(47, 47, 47);
-       font-size: 13px;
-       padding: 12px;
-    } 
 
     .nav{
        position: fixed;
        width: 50%;
        height: 100%;
-       background: #faf7f7;
+       background: #161616;
        right: -100%;
        top: 0;
        transition: 0.7s;
        z-index: 1;
+       display: flex;
+       align-items: center;
+       /* justify-content: center; */
     }
    
    .socials {
@@ -112,7 +106,7 @@
     position: absolute;
     top: 10px;
     right: 20px;
-    color: rgb(100, 98, 98);
+    color: rgb(50, 195, 152);
   }
 
   .show-menu-btn {
@@ -132,8 +126,57 @@
     flex-direction: column !important;
     height: 100% !important;
     /* align-items: center; */
-    padding: 0px 10px 0px 18px;
+    padding: 0px 10px 0px 18px !important;
   }
+
+  .nav ul{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    position: relative;
+  }
+  .nav ul {
+      /* background-color: red; */
+      width: 100%;
+      padding: 25px;
+      margin-top: 100px;
+  }
+
+  .nav ul li {
+      display: flex;
+      /* background-color: red; */
+      width: 100%;
+  }
+
+     .nav ul li b {
+        display: flex !important;
+        color: rgb(92, 92, 92);
+        font-size: 15px;
+        padding: 0px;
+        /* background-color: red; */
+        position: absolute;
+        left: 100px;
+        margin-top: -22px;
+        /* top: 50px; */
+        text-transform: uppercase;
+    } 
+
+    nav ul li i {
+        font-size: 20px;
+        padding: 0px 0px 0 0;
+        color: rgb(50, 195, 152);
+    }
+
+    nav a:hover i{
+        display: block;
+        padding: 0;
+    }
+    
+    nav a:hover b {
+        display: block;
+        padding: 0px;
+    }
 
 
 }
@@ -232,6 +275,11 @@
         /* width: 50%; */
         padding: 45px;
     }
+
+    .nav{
+        width: 100%;
+     }
+    
 }
 
 @media (max-width: 600px){
