@@ -117,7 +117,7 @@ p {
 }
 
 /*Nav*/
-ul {
+ ul {
    list-style: none;
 }
 
@@ -129,7 +129,7 @@ a {
 a:hover{
     color: rgb(50, 195, 152);
     transition: all ease-in 0.2s;
-}
+} 
 
 .show-menu-btn, .hide-menu-btn {
     transition: 0.4s;
@@ -157,9 +157,9 @@ header {
 }
 
 
-nav i {
+/* nav i {
     padding: 14px;
-}
+} */
 
 header h1 {
     font-family: 'Jockey One', sans-serif;
@@ -189,10 +189,10 @@ nav a:hover i{
     display: none;
 }
 
-nav a:hover b {
+ nav a:hover b {
     display: block;
     padding: 10px;
-}
+} 
 
 .socials ul li{
     padding: 6px;
