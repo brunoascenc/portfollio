@@ -247,14 +247,24 @@
     
 }
 
-@media (max-width: 820px){
+@media (max-width: 825px){
     /* #container {
         display: flex;
         flex-direction: column;
         width: 100%;
     } */
     h1{
-        font-size: 28px;
+        font-size: 27px;
+    }
+
+    #container{
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+}
+
+@media (max-width: 800px){
+    h1{
+        font-size: 27px;
     }
 }
 
@@ -262,19 +272,19 @@
     .circle{
         display: none;
     }
+    #container{
+        display: flex;
+        flex-direction: column;
+    }
     
     h1{
-        font-size: 30px;
+        font-size: 45px;
     }
 
     .home-page {
-        /* display: flex; */
-        /* align-self: center; */
-        /* flex-direction: column; */
-        /* margin-left: 0px; */
-        /* margin-top: 0px; */
-        /* width: 6vw; */
-        /* padding: 35px; */
+        margin-left: 270px;
+        margin-top: -100px;
+        width: 100%;
     }
 }
 
@@ -292,6 +302,16 @@
     .contact-page, .about-page, .skills-page{
         /* width: 50%; */
         padding: 45px;
+    }
+
+    .home-page {
+        margin-left: 200px;
+        margin-top: -100px;
+        width: 100%;
+    }
+
+    h1{
+        font-size: 40px;
     }
 
     .nav{
@@ -340,12 +360,26 @@
     .contact-page .detail p {
         font-size: 14px;
     }
+
+    .home-page h1{
+        font-size: 35px;
+    }
 }
 
 @media(max-width: 525px){
     .contact-page, .about-page, .skills-page{
         /* width: 50%; */
         padding: 24px;
+    }
+
+    .home-page h1{
+        font-size: 30px;
+    }
+
+    .home-page {
+        margin-left: 170px;
+        margin-top: -100px;
+        width: 100%;
     }
 }
 
@@ -358,6 +392,16 @@
     .socials{
         font-size: 14px;
         /* padding: 2px 10px 0 0; */
+    }
+
+    .home-page h1{
+        font-size: 28px;
+    }
+
+    .home-page {
+        margin-left: 120px;
+        margin-top: -100px;
+        width: 100%;
     }
 }
 
@@ -372,6 +416,16 @@
         padding: 33px 3px 0 0;
     } */
     .contact-page button {
+        width: 100%;
+    }
+
+    .home-page h1{
+        font-size: 25px;
+    }
+
+    .home-page {
+        margin-left: 100px;
+        margin-top: -100px;
         width: 100%;
     }
 
@@ -450,6 +504,14 @@
     .about-page{
         width: 70%;
         padding: 20px;
+    }
+
+    .home-page h1{
+        font-size: 23px;
+    }
+
+    .home-page {
+        margin-left: 90px;
     }
 
 }
